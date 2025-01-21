@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Log In</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="singUp">
+            <h2>Sing Up</h2>
+            <form id="singUpForm" novalidate>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <span id="errorEmail" class="error"></span>
+                <label class="passwordLabel" for="password">Contraseña:</label>
+                <br>
+                <input type="password" name="password" id="password" required autocomplete="off" oncopy="return false" onpaste="return false">
+                <p class="bx bxs-hide" id="showHide"></p>
+                <!-- <p class='bx bxs-show' id="showHide"></p> -->
+                <br>
+                <span id="errorPassword" class="error"></span>
+                <label class="password" for="confirmPassword">Confirma la contraseña:</label>
+                <br>
+                <input type="password" name="confirmPassword" id="confirmPassword" required autocomplete="off" oncopy="return false" onpaste="return false">
+                <br>
+                <span id="errorConfirmPassword" class="error"></span>
+                <input type="submit" id="submitSingUp" value="Log in">
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
